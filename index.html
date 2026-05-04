@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ممكن تقبلي اعتذاري؟</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff5f7;
+            color: #5d4037;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            cursor: pointer;
+        }
+        header {
+            background: linear-gradient(135deg, #ff80ab, #f06292);
+            padding: 50px 20px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .apology-text {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 20px;
+            font-size: 1.3em;
+            line-height: 1.6;
+            color: #ad1457;
+            box-shadow: 0 10px 25px rgba(255, 128, 171, 0.15);
+            border-right: 5px solid #ff80ab;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .photo-card {
+            background: white;
+            padding: 15px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(255, 128, 171, 0.2);
+        }
+        .photo-card img {
+            width: 100%;
+            border-radius: 20px;
+            height: 450px;
+            object-fit: cover;
+        }
+        .love-message {
+            font-size: 1.5em;
+            color: #ad1457;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        footer {
+            padding: 30px;
+            background: #fce4ec;
+            color: #880e4f;
+            margin-top: 50px;
+        }
+        #myAudio { display: none; }
+    </style>
+</head>
+<body onclick="playMusic()">
+
+<header>
+    <h1>ممكن تقبلي اعتذاري يست البنات؟ ❤️</h1>
+    <p style="margin-top:10px;">دوسي في أي مكان عشان تسمعي أغنيتنا 🎵</p>
+</header>
+
+<!-- رسالة الاعتذار رقم 2 -->
+<div class="apology-text">
+    "يا أغلى ما أملك، الدنيا اسودت في عيني لما شفت زعلك. أنا غلطت وغلطي كبير، بس والله قلبك أبيض ومحبتنا أكبر من أي لحظة ضعف. أنا عملتلك الموقع ده عشان أفكرك بكل لحظة حلوة عشناها سوا، وعشان أقولك إنك 'معاك قلبي' ومش هيخرج منك أبداً. سامحيني يا أميرتي، ومستني منك بس إشارة إنك قبلتي اعتذاري."
+</div>
+
+<audio id="myAudio" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="gallery">
+    <div class="photo-card"><img src="1.jpeg" alt="1"><p class="love-message">بحبك ❤️</p></div>
+    <div class="photo-card"><img src="2.jpeg" alt="2"><p class="love-message">بحبك ❤️</p></div>
+    <div class="photo-card"><img src="3.jpeg" alt="3"><p class="love-message">بحبك ❤️</p></div>
+    <div class="photo-card"><img src="4.jpeg" alt="4"><p class="love-message">بحبك ❤️</p></div>
+    <div class="photo-card"><img src="5.jpeg" alt="5"><p class="love-message">بحبك ❤️</p></div>
+</div>
+
+<footer>
+    <p>مستني سماحك يا ست البنات ❤️</p>
+</footer>
+
+<script>
+    function playMusic() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
